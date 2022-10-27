@@ -54,7 +54,7 @@ function terrain(pos){
 }
 
 function Player(){
-    this.direction = new vec3(0.0, 0.0, 1.0);
+    this.direction = new vec3(0.0, 1.0, 1.0);
     
     this.position = new vec3(0.0, 1.0, 1.0);
     this.velocity = new vec3(0.0, 0.0, 0.0);
@@ -62,7 +62,7 @@ function Player(){
     this.speed = 0.005;
     this.turn = 0.07;
     
-    this.gravity = new vec3(0.0, 0.005, 0.0);
+    this.gravity = new vec3(0.0, 0.007, 0.0);
     
     this.jump = 2.0;//How many blocks high to jump
     this.jumpForce = Math.sqrt(2.6*this.jump*this.gravity.y);
